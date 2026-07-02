@@ -1,0 +1,12 @@
+Agentic loops and stop_reason:
+(The engine behind every claude agent)
+
+Anthropic Docs: https://docs.anthropic.com
+Claude API Reference: https://docs.anthropic.com/en/api
+Certification Info: https://anthropic.com
+
+Role types:
+System Role: defined role(like Social media marketer)
+User Role: End user
+Assistant Role:LLM or other agent
+
