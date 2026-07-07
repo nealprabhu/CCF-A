@@ -1,0 +1,75 @@
+Context overflow:
+    -Tools results accumanalates rapidly and context hitas the ceilings.
+
+Sequential bottle neck:
+    - SIngle agents are sequentials and independent subtask queue up.
+
+Specialization gap:
+    -scoped agent with narrow jobs performs really better.
+
+.......................................................................
+
+The HUB- and -scope Topology:
+
+              sub-agent
+        X          |          X
+sub-agent---Corridnator Node --- sub-agent
+          X        |         X
+              sub-agent
+
+Exam Tip: This topology only gurantee way for handling  centaral errro handling and complete system observality.
+
+Four Coordinator repsonsibilities:
+1-> Task decomposition.
+2-> Delegation.
+3-> Result Aggregation.
+4 -> Error Handling.
+
+Task tool payload:
+>description
+>prompt
+> allowed tools
+>model
+///////////////////////////////////////////////////////////////////////////
+
+Parallel vs sequential Spawning  of Subagents
+Parallel Execution: 
+              S1              Total time = max(s1,s2,s3)
+API CALL -->  S2
+              S3 
+
+Sequential Execution:
+
+API CALL-> S1                Total time  = S1+S2+S3
+                 S2
+                        s3
+
+Exam Tip: If a system is running 3x slower than expected then the coordinator is doing Sequential anti-pattern(waiting turn by turn)
+............................................................................
+
+The context isolation Airblock
+Exam Tip : Sub-agent start completely fresh. The inherit abslutely nothing.
+
+////////////////////////////////////////////////////////////////////////////
+
+Bypassing the Airlock: Explictly injecting the sub-agent
+
+Action Required: Explictly injecting the required date in  the prompt field of the task tool call:
+
+Exam Tip: If a sub-agent produces irrelevant, duplicate or context-unaware output, the root cause in explict context injection.
+/////////////////////////////
+
+Good VS bad Prompting.
+
+
+Dont give step by step procedures (Anti-patterns)
+Follow the best practice.
+
+
+
+
+
+
+
+
+
