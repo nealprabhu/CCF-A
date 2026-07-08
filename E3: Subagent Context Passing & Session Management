@@ -7,3 +7,14 @@ Attribution loss
 1> Separate context from metadata.
       Attribution loss
 
+
+Claim-Source Mappings:
+--> Every sysnthetic step in the pipeline must o/p both array intact.
+
+Resolving reality Clashes:
+--> if there is a conflict in the result then show it to coordinator to make the final decision.
+
+
+Session Management: 3 Patterns
+1-> Named session resumption: ET : Never resume aany session without explecitly stating what has changed.
+2-> Fork Session: Branching if it takes long time to buildup.
